@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77078DDE25BFE89600125A67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77078DDD25BFE89600125A67 /* AppDelegate.m */; };
+		77078DE025BFE89900125A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77078DDF25BFE89900125A67 /* Assets.xcassets */; };
+		77078DE325BFE89900125A67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77078DE125BFE89900125A67 /* MainMenu.xib */; };
+		77078DE625BFE89900125A67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77078DE525BFE89900125A67 /* main.m */; };
+		77078DF125BFE89900125A67 /* PowerMate_Control_CenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77078DF025BFE89900125A67 /* PowerMate_Control_CenterTests.m */; };
+		77078DFC25BFE89A00125A67 /* PowerMate_Control_CenterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77078DFB25BFE89A00125A67 /* PowerMate_Control_CenterUITests.m */; };
+		77078E0B25BFE8B300125A67 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77078E0A25BFE8B200125A67 /* CoreBluetooth.framework */; };
+		77078E0E25BFEFA700125A67 /* PowermateControllerDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 77078E0D25BFEFA700125A67 /* PowermateControllerDriver.m */; };
+		77F6AF5825C0C7AE003D419B /* NBCoreBluetoothAPIMisuseGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F6AF5725C0C7AE003D419B /* NBCoreBluetoothAPIMisuseGuard.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77078DED25BFE89900125A67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77078DD125BFE89600125A67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77078DD825BFE89600125A67;
+			remoteInfo = "PowerMate Control Center";
+		};
+		77078DF825BFE89A00125A67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77078DD125BFE89600125A67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77078DD825BFE89600125A67;
+			remoteInfo = "PowerMate Control Center";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77078DD925BFE89600125A67 /* PowerMate Control Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PowerMate Control Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77078DDC25BFE89600125A67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77078DDD25BFE89600125A67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77078DDF25BFE89900125A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77078DE225BFE89900125A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		77078DE425BFE89900125A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77078DE525BFE89900125A67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77078DE725BFE89900125A67 /* PowerMate_Control_Center.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PowerMate_Control_Center.entitlements; sourceTree = "<group>"; };
+		77078DEC25BFE89900125A67 /* PowerMate Control CenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PowerMate Control CenterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77078DF025BFE89900125A67 /* PowerMate_Control_CenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowerMate_Control_CenterTests.m; sourceTree = "<group>"; };
+		77078DF225BFE89900125A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77078DF725BFE89A00125A67 /* PowerMate Control CenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PowerMate Control CenterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77078DFB25BFE89A00125A67 /* PowerMate_Control_CenterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowerMate_Control_CenterUITests.m; sourceTree = "<group>"; };
+		77078DFD25BFE89A00125A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77078E0A25BFE8B200125A67 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		77078E0C25BFEFA700125A67 /* PowermateControllerDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowermateControllerDriver.h; sourceTree = "<group>"; };
+		77078E0D25BFEFA700125A67 /* PowermateControllerDriver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowermateControllerDriver.m; sourceTree = "<group>"; };
+		77F6AF5725C0C7AE003D419B /* NBCoreBluetoothAPIMisuseGuard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBCoreBluetoothAPIMisuseGuard.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77078DD625BFE89600125A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77078E0B25BFE8B300125A67 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77078DE925BFE89900125A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77078DF425BFE89A00125A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77078DD025BFE89600125A67 = {
+			isa = PBXGroup;
+			children = (
+				77078DDB25BFE89600125A67 /* PowerMate Control Center */,
+				77078DEF25BFE89900125A67 /* PowerMate Control CenterTests */,
+				77078DFA25BFE89A00125A67 /* PowerMate Control CenterUITests */,
+				77078DDA25BFE89600125A67 /* Products */,
+				77078E0925BFE8B200125A67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77078DDA25BFE89600125A67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77078DD925BFE89600125A67 /* PowerMate Control Center.app */,
+				77078DEC25BFE89900125A67 /* PowerMate Control CenterTests.xctest */,
+				77078DF725BFE89A00125A67 /* PowerMate Control CenterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77078DDB25BFE89600125A67 /* PowerMate Control Center */ = {
+			isa = PBXGroup;
+			children = (
+				77078DDC25BFE89600125A67 /* AppDelegate.h */,
+				77078DDD25BFE89600125A67 /* AppDelegate.m */,
+				77078DDF25BFE89900125A67 /* Assets.xcassets */,
+				77078DE125BFE89900125A67 /* MainMenu.xib */,
+				77078DE425BFE89900125A67 /* Info.plist */,
+				77078DE525BFE89900125A67 /* main.m */,
+				77078DE725BFE89900125A67 /* PowerMate_Control_Center.entitlements */,
+				77078E0C25BFEFA700125A67 /* PowermateControllerDriver.h */,
+				77078E0D25BFEFA700125A67 /* PowermateControllerDriver.m */,
+				77F6AF5725C0C7AE003D419B /* NBCoreBluetoothAPIMisuseGuard.m */,
+			);
+			path = "PowerMate Control Center";
+			sourceTree = "<group>";
+		};
+		77078DEF25BFE89900125A67 /* PowerMate Control CenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				77078DF025BFE89900125A67 /* PowerMate_Control_CenterTests.m */,
+				77078DF225BFE89900125A67 /* Info.plist */,
+			);
+			path = "PowerMate Control CenterTests";
+			sourceTree = "<group>";
+		};
+		77078DFA25BFE89A00125A67 /* PowerMate Control CenterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77078DFB25BFE89A00125A67 /* PowerMate_Control_CenterUITests.m */,
+				77078DFD25BFE89A00125A67 /* Info.plist */,
+			);
+			path = "PowerMate Control CenterUITests";
+			sourceTree = "<group>";
+		};
+		77078E0925BFE8B200125A67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77078E0A25BFE8B200125A67 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77078DD825BFE89600125A67 /* PowerMate Control Center */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77078E0025BFE89A00125A67 /* Build configuration list for PBXNativeTarget "PowerMate Control Center" */;
+			buildPhases = (
+				77078DD525BFE89600125A67 /* Sources */,
+				77078DD625BFE89600125A67 /* Frameworks */,
+				77078DD725BFE89600125A67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PowerMate Control Center";
+			productName = "PowerMate Control Center";
+			productReference = 77078DD925BFE89600125A67 /* PowerMate Control Center.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77078DEB25BFE89900125A67 /* PowerMate Control CenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77078E0325BFE89A00125A67 /* Build configuration list for PBXNativeTarget "PowerMate Control CenterTests" */;
+			buildPhases = (
+				77078DE825BFE89900125A67 /* Sources */,
+				77078DE925BFE89900125A67 /* Frameworks */,
+				77078DEA25BFE89900125A67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77078DEE25BFE89900125A67 /* PBXTargetDependency */,
+			);
+			name = "PowerMate Control CenterTests";
+			productName = "PowerMate Control CenterTests";
+			productReference = 77078DEC25BFE89900125A67 /* PowerMate Control CenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77078DF625BFE89A00125A67 /* PowerMate Control CenterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77078E0625BFE89A00125A67 /* Build configuration list for PBXNativeTarget "PowerMate Control CenterUITests" */;
+			buildPhases = (
+				77078DF325BFE89A00125A67 /* Sources */,
+				77078DF425BFE89A00125A67 /* Frameworks */,
+				77078DF525BFE89A00125A67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77078DF925BFE89A00125A67 /* PBXTargetDependency */,
+			);
+			name = "PowerMate Control CenterUITests";
+			productName = "PowerMate Control CenterUITests";
+			productReference = 77078DF725BFE89A00125A67 /* PowerMate Control CenterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77078DD125BFE89600125A67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Chris Edstrom";
+				TargetAttributes = {
+					77078DD825BFE89600125A67 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					77078DEB25BFE89900125A67 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 77078DD825BFE89600125A67;
+					};
+					77078DF625BFE89A00125A67 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 77078DD825BFE89600125A67;
+					};
+				};
+			};
+			buildConfigurationList = 77078DD425BFE89600125A67 /* Build configuration list for PBXProject "PowerMate Control Center" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77078DD025BFE89600125A67;
+			productRefGroup = 77078DDA25BFE89600125A67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77078DD825BFE89600125A67 /* PowerMate Control Center */,
+				77078DEB25BFE89900125A67 /* PowerMate Control CenterTests */,
+				77078DF625BFE89A00125A67 /* PowerMate Control CenterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77078DD725BFE89600125A67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77078DE025BFE89900125A67 /* Assets.xcassets in Resources */,
+				77078DE325BFE89900125A67 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77078DEA25BFE89900125A67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77078DF525BFE89A00125A67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77078DD525BFE89600125A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F6AF5825C0C7AE003D419B /* NBCoreBluetoothAPIMisuseGuard.m in Sources */,
+				77078DE625BFE89900125A67 /* main.m in Sources */,
+				77078E0E25BFEFA700125A67 /* PowermateControllerDriver.m in Sources */,
+				77078DDE25BFE89600125A67 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77078DE825BFE89900125A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77078DF125BFE89900125A67 /* PowerMate_Control_CenterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77078DF325BFE89A00125A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77078DFC25BFE89A00125A67 /* PowerMate_Control_CenterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77078DEE25BFE89900125A67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77078DD825BFE89600125A67 /* PowerMate Control Center */;
+			targetProxy = 77078DED25BFE89900125A67 /* PBXContainerItemProxy */;
+		};
+		77078DF925BFE89A00125A67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77078DD825BFE89600125A67 /* PowerMate Control Center */;
+			targetProxy = 77078DF825BFE89A00125A67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77078DE125BFE89900125A67 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77078DE225BFE89900125A67 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77078DFE25BFE89A00125A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		77078DFF25BFE89A00125A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		77078E0125BFE89A00125A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "PowerMate Control Center/PowerMate_Control_Center.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2M98F7RRJ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "PowerMate Control Center/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "name.edstrom.PowerMate-Control-Center";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77078E0225BFE89A00125A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "PowerMate Control Center/PowerMate_Control_Center.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2M98F7RRJ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "PowerMate Control Center/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "name.edstrom.PowerMate-Control-Center";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		77078E0425BFE89A00125A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2M98F7RRJ5;
+				INFOPLIST_FILE = "PowerMate Control CenterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "name.edstrom.PowerMate-Control-CenterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerMate Control Center.app/Contents/MacOS/PowerMate Control Center";
+			};
+			name = Debug;
+		};
+		77078E0525BFE89A00125A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2M98F7RRJ5;
+				INFOPLIST_FILE = "PowerMate Control CenterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "name.edstrom.PowerMate-Control-CenterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerMate Control Center.app/Contents/MacOS/PowerMate Control Center";
+			};
+			name = Release;
+		};
+		77078E0725BFE89A00125A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2M98F7RRJ5;
+				INFOPLIST_FILE = "PowerMate Control CenterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "name.edstrom.PowerMate-Control-CenterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "PowerMate Control Center";
+			};
+			name = Debug;
+		};
+		77078E0825BFE89A00125A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2M98F7RRJ5;
+				INFOPLIST_FILE = "PowerMate Control CenterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "name.edstrom.PowerMate-Control-CenterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "PowerMate Control Center";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77078DD425BFE89600125A67 /* Build configuration list for PBXProject "PowerMate Control Center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77078DFE25BFE89A00125A67 /* Debug */,
+				77078DFF25BFE89A00125A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77078E0025BFE89A00125A67 /* Build configuration list for PBXNativeTarget "PowerMate Control Center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77078E0125BFE89A00125A67 /* Debug */,
+				77078E0225BFE89A00125A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77078E0325BFE89A00125A67 /* Build configuration list for PBXNativeTarget "PowerMate Control CenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77078E0425BFE89A00125A67 /* Debug */,
+				77078E0525BFE89A00125A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77078E0625BFE89A00125A67 /* Build configuration list for PBXNativeTarget "PowerMate Control CenterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77078E0725BFE89A00125A67 /* Debug */,
+				77078E0825BFE89A00125A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77078DD125BFE89600125A67 /* Project object */;
+}
