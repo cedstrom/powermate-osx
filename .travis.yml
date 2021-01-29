@@ -3,4 +3,3 @@ language: objective-c
 osx_image: xcode12.2
 xcode_project: PowerMate Control Center.xcodeproj
 xcode_scheme: PowerMate Control Center
-xcode_destination: macosx11.0
