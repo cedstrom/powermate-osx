@@ -1,6 +1,7 @@
 # Powermate Driver
 This is a dead simple driver for Mac OS X to revive the Bluetooth version of the [Griffin Powermate](https://en.wikipedia.org/wiki/Griffin_PowerMate) in modern versions of OS X.  Tested on Catalina (.15).
 
+[![Build Status](https://www.travis-ci.com/cedstrom/powermate-osx.svg?branch=main)](https://www.travis-ci.com/cedstrom/powermate-osx)
 
 ## What does this do?
 This app runs in the menu bar and sends NSDistributedNotifications for knob actions.  The topic is ```kPowermateKnobNotification```.
