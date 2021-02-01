@@ -15,6 +15,7 @@
 		77078DFC25BFE89A00125A67 /* PowerMate_Control_CenterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77078DFB25BFE89A00125A67 /* PowerMate_Control_CenterUITests.m */; };
 		77078E0B25BFE8B300125A67 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77078E0A25BFE8B200125A67 /* CoreBluetooth.framework */; };
 		77078E0E25BFEFA700125A67 /* PowermateControllerDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 77078E0D25BFEFA700125A67 /* PowermateControllerDriver.m */; };
+		77B507E925C7E2B1006AEDA0 /* Switcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B507E825C7E2B1006AEDA0 /* Switcher.m */; };
 		77F6AF5825C0C7AE003D419B /* NBCoreBluetoothAPIMisuseGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F6AF5725C0C7AE003D419B /* NBCoreBluetoothAPIMisuseGuard.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,8 @@
 		77078E0A25BFE8B200125A67 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		77078E0C25BFEFA700125A67 /* PowermateControllerDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowermateControllerDriver.h; sourceTree = "<group>"; };
 		77078E0D25BFEFA700125A67 /* PowermateControllerDriver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowermateControllerDriver.m; sourceTree = "<group>"; };
+		77B507E725C7E2B1006AEDA0 /* Switcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Switcher.h; sourceTree = "<group>"; };
+		77B507E825C7E2B1006AEDA0 /* Switcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Switcher.m; sourceTree = "<group>"; };
 		77F6AF5725C0C7AE003D419B /* NBCoreBluetoothAPIMisuseGuard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBCoreBluetoothAPIMisuseGuard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +109,8 @@
 		77078DDB25BFE89600125A67 /* PowerMate Control Center */ = {
 			isa = PBXGroup;
 			children = (
+				77B507E725C7E2B1006AEDA0 /* Switcher.h */,
+				77B507E825C7E2B1006AEDA0 /* Switcher.m */,
 				77078DDC25BFE89600125A67 /* AppDelegate.h */,
 				77078DDD25BFE89600125A67 /* AppDelegate.m */,
 				77078DDF25BFE89900125A67 /* Assets.xcassets */,
@@ -278,6 +283,7 @@
 				77F6AF5825C0C7AE003D419B /* NBCoreBluetoothAPIMisuseGuard.m in Sources */,
 				77078DE625BFE89900125A67 /* main.m in Sources */,
 				77078E0E25BFEFA700125A67 /* PowermateControllerDriver.m in Sources */,
+				77B507E925C7E2B1006AEDA0 /* Switcher.m in Sources */,
 				77078DDE25BFE89600125A67 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

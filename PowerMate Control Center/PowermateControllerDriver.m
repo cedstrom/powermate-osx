@@ -9,12 +9,21 @@
 #import <AVKit/AVKit.h>
 
 #import "PowermateControllerDriver.h"
+#import "Switcher.h"
 
 NSString* const kPowermateServiceUUID = @"25598CF7-4240-40A6-9910-080F19F91EBC";
 NSString* const kPowermateReadCharacteristicUUID = @"9cf53570-ddd9-47f3-ba63-09acefc60415";
 NSString* const kPowermateLedCharacteristicUUID = @"847d189e-86ee-4bd2-966f-800832b1259d";
 
 NSString* const kPowermateKnobNotification = @"kPowermateKnobNotification";
+
+//incoming LED ipc constants
+NSString* const kPowermateLEDNotification = @"kPowermateLEDNotification";
+
+NSString* const kPowermateLEDOn = @"kPowermateLEDOn";
+NSString* const kPowermateLEDOff = @"kPowermateLEDOff";
+NSString* const kPowermateLEDFlash = @"kPowermateLEDFlash";
+NSString* const kPowermateLEDLevel = @"kPowermateLEDLevel";
 
 #define POWERMATE_KNOB_STATES \
   X(kPowermateKnobPress, 0x65) \
@@ -54,6 +63,7 @@ typedef NS_ENUM(uint8_t, PowermateInputState) {
   if(_peripheral) {
     [_manager cancelPeripheralConnection:_peripheral];
   }
+  [[NSDistributedNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - Map "Constants"
@@ -87,6 +97,9 @@ typedef NS_ENUM(uint8_t, PowermateInputState) {
   
   [self updateConnectionState:false];
   
+  NSDistributedNotificationCenter *defaultCenter = [NSDistributedNotificationCenter defaultCenter];
+  [defaultCenter addObserver:self selector:@selector(ledNotificationObserver:) name:kPowermateLEDNotification object:nil];
+
   return self;
 }
 
@@ -111,8 +124,50 @@ typedef NS_ENUM(uint8_t, PowermateInputState) {
 
 #pragma mark - Processing loop
 
+//outgoing events
 -(void) process:(PowermateInputState)value {
   [[NSDistributedNotificationCenter defaultCenter] postNotificationName:kPowermateKnobNotification object:[PowermateControllerDriver nameForState:value]];
+}
+
+-(void) ledNotificationObserver:(NSNotification *)notification {
+  if(![notification.userInfo isKindOfClass:[notification.userInfo class]]) {
+    NSLog(@"Notification not a dictionary");
+    return;
+  }
+  NSDictionary *message = (NSDictionary*) notification.userInfo;
+  NSString* function = [message objectForKey:@"fn"];
+  if(function == nil) {
+    NSLog(@"no function sent");
+    return;
+  }
+  [Switcher switchOnString:function using:@{
+    kPowermateLEDOn:
+      ^{
+    [self setLedOn];
+  },
+    kPowermateLEDOff:
+      ^{
+    [self setLedOff];
+  },
+    kPowermateLEDFlash:
+      ^{
+    int level = [[message valueForKey:@"level"] intValue];
+    if(level == 32) {
+      [self quickBlinkLed];
+    } else {
+      [self blinkLedAtSpeed:level];
+    }
+  },
+    kPowermateLEDLevel:
+      ^{
+    float level = [[message valueForKey:@"level"] floatValue];
+    [self setLedBrightness:level];
+  }
+  } withDefault:
+   ^{
+    NSLog(@"Unknown command");
+  }
+   ];
 }
 
 #pragma mark - LED State management
@@ -150,10 +205,10 @@ typedef NS_ENUM(uint8_t, PowermateInputState) {
 }
 
 -(void) blinkLedAtSpeed:(int) speed {
-  if(speed > 63) {
-    speed = 63;
+  if(speed > 31) {
+    speed = 31;
   }
-  [self setLedRawValue:0xff - speed];
+  [self setLedRawValue:0xdf - speed];
 }
 
 #pragma mark - CBPeripheral Delegate

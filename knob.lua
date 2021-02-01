@@ -27,3 +27,27 @@ powermate =
     "kPowermateKnobNotification"
 )
 powermate:start()
+
+-- ramp the led, flash it slow, flash it quickly, turn it off.
+for i=0,1,0.1
+do
+    hs.distributednotifications.post("kPowermateLEDNotification", "org.hammerspoon", { fn = "kPowermateLEDLevel", level=i})
+    hs.timer.usleep(250000);
+end
+
+hs.timer.doAfter(1,
+    function()
+        hs.distributednotifications.post("kPowermateLEDNotification", "org.hammerspoon", { fn = "kPowermateLEDFlash", level=15})
+        hs.timer.doAfter(10,
+            function()
+                hs.distributednotifications.post("kPowermateLEDNotification", "org.hammerspoon", { fn = "kPowermateLEDFlash", level=32})
+                hs.timer.doAfter(2,
+                    function()
+                        hs.distributednotifications.post("kPowermateLEDNotification", "org.hammerspoon", { fn = "kPowermateLEDOff"})
+                    end
+                )
+            end
+        )
+    end
+)
+
