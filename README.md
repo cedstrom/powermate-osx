@@ -55,7 +55,11 @@ To flash the knob, send fn ```kPowermateLEDFlash``` with an int 0-32, the higher
 I use this as volume/mute knob for Zoom, but the possibilities are endless with [Hammerspoon](https://www.hammerspoon.org/).  See ```knob.lua``` for an example on how to easily control your system volume and mute your mic with Hammerspoon.  Of course, there are way more advanced setups.  For example, you can make Hammerspoon look at the current foregrounded app and do specific things per app (scrub a timeline, scroll pages, etc.), or you could add multiple global modes.
 
 ## Getting Started
-Drop the contents of ```knob.lua``` into your Hammerspoon ```init.lua``` and reload the config.  Compile & run this app.
+Install and run Hammerspoon.
+
+You need to install the [MicMute Spoon](https://www.hammerspoon.org/Spoons/MicMute.html).  Just download and doubleclick.
+
+Then, drop the contents of ```knob.lua``` into your Hammerspoon ```init.lua``` and reload the config.  Compile & run this app.
 
 You'll have to click your knob once or twice to wake it up and connect.  Once it does, the menu bar item should change from ⭕ to 🎛️.
 ## Contributions Welcome!
