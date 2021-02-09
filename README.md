@@ -59,7 +59,7 @@ Install and run Hammerspoon.
 
 You need to install the [MicMute Spoon](https://www.hammerspoon.org/Spoons/MicMute.html).  Just download and doubleclick.
 
-Then, drop the contents of ```knob.lua``` into your Hammerspoon ```init.lua``` and reload the config.  Compile & run this app.
+Then, drop the contents of ```knob.lua``` into your Hammerspoon ```init.lua``` and reload the config.  [Download](https://github.com/cedstrom/powermate-osx/releases) (or clone & compile) and then run this app.
 
 You'll have to click your knob once or twice to wake it up and connect.  Once it does, the menu bar item should change from ⭕ to 🎛️.
 ## Contributions Welcome!
